@@ -29,7 +29,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'docker run -d -p 8888:80 testimage'
+                sh 'docker run -d -p 8888:80 toxicmoel/image2'
             }
         }
     }
