@@ -6,7 +6,7 @@ pipeline {
             steps {
                 echo 'Building the application...'
                 // Example build command
-                sh 'docker build --no-cache -t jenkinsimage -f jenkinsimage .'
+                sh 'docker build --no-cache -t jenkinsimage  .'
             }
         }
         stage('push') {
