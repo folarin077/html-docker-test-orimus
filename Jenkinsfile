@@ -21,6 +21,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying the application...'
+                sh  'ssh -i "/home/ec2-user/my-first.pem" ec2-user@ec2-35-182-61-252.ca-central-1.compute.amazonaws.com -t "docker run -p 80:80 toxicmoel/jenkinsimage -d "'
                 
             }
         }
