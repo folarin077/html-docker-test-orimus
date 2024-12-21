@@ -12,9 +12,9 @@ pipeline {
         stage('push') {
             steps {
                 echo 'Running push...'
-                sh 'docker tag jenkinsimage toxicmoel/jenkinsimage:${BUILD_ID}'
-                sh 'docker login -u="toxicmoel" -p="Jesuisroot123@"'
-                sh 'docker push toxicmoel/jenkinsimage:${BUILD_ID} '
+                sh 'docker tag jenkinsimage folarin077/jenkinsimage:${BUILD_ID}'
+                sh 'docker login -u="toxicmoel" -p="Gunnerfemi!23"'
+                sh 'docker push folarin077/jenkinsimage:${BUILD_ID} '
                 
             }
         }
